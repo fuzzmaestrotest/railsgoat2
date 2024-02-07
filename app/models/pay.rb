@@ -5,7 +5,9 @@ class Pay < ApplicationRecord
 
   # Validations
   validates :bank_account_num, presence: true
+
   validates :bank_routing_num, presence: false
+
   validates :percent_of_deposit, presence: false
 
   # callbacks
